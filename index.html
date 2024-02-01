@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title> Best Card Game | 4 Straight</title>
+  <title> Best Card Game | 6 High Card</title>
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
@@ -34,12 +34,14 @@
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
-
+  <script> if(window.location.href.includes("www.")) {
+    window.location.href = window.location.href.replace('www.','')
+  } </script>
 </head>
 <body>
-  <div id="GameDiv">
+  <div id="GameDiv" cc_exact_fit_screen="true">
       <div id="Cocos3dGameContainer">
-        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+        <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
       </div>
     </div>
   
